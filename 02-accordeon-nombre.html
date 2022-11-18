@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <div class="accordeon" x-data ="{isopen:1}">
+
+      <section>
+        <button @click="isopen=1">bouton1</button>
+        <p x-show ="isopen === 1" x-transition>Lorem ipsum dolor sit amet.</p>
+        <button @click="isopen=2">bouton2</button>
+        <p x-show ="isopen === 2" x-transition>Lorem ipsum dolor sit amet.</p>
+        <button @click="isopen=3">bouton3</button>
+        <p x-show ="isopen === 3" x-transition>Lorem ipsum dolor sit amet.</p>
+      </section>
+    </div>
   </body>
 </html>
