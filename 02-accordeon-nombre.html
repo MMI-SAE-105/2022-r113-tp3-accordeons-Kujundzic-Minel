@@ -17,7 +17,7 @@
         <button @click="isopen=2">bouton2</button>
         <p x-show ="isopen === 2" x-transition>Lorem ipsum dolor sit amet.</p>
         <button @click="isopen=3">bouton3</button>
-        <p x-show ="isopen === 3" x-transition>Lorem ipsum dolor sit amet.</p>
+        <p x-show ="isopen === 3" x-transition:enter.scale.100px>Lorem ipsum dolor sit amet.</p>
       </section>
     </div>
   </body>
