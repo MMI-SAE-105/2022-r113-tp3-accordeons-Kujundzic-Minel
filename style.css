@@ -13,6 +13,7 @@
     margin: 3px;
     padding: 5px;
     border-radius: 5px;
+     cursor: pointer;
     /* largeur de chaque élément replié 107px */
     /* pour cacher le contenu dépassant de l'élément */
     /* pour l'animation, transition sur width */
