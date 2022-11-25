@@ -14,10 +14,10 @@
       ouvert : 1,
      }">
 
-     <ul role="tablist" :class="{actif:open === 1}">
-      <li role="tab" @click="open = 1">Onglet 1</li>
-      <li role="tab" @click="open === 2">Onglet 2</li>
-      <li role="tab" @click="open === 3">Onglet 3</li>
+     <ul role="tablist" id="accordeon" x-data="{open:1}">
+      <li role="tab" class="{actif:open === 1}">Onglet 1</li>
+      <li role="tab" class="{actif:open === 2}">Onglet 2</li>
+      <li role="tab" class="{actif:open === 1}">Onglet 3</li>
      </ul>
 
      <div>
